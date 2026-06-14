@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+<BaseLayout
+  title="Music Mirror"
+  description="Music Mirror support and privacy information."
+>
+  <section class="hero">
+    <p class="eyebrow">iOS app</p>
+    <h1>Music Mirror</h1>
+    <p class="lede">A focused practice companion for musicians who organize songs, reference media, notes, timers, and recordings in one place.</p>
+    <div class="button-row">
+      <a class="button primary" href="/music-mirror/support.html">Support</a>
+      <a class="button" href="/music-mirror/privacy.html">Privacy Policy</a>
+    </div>
+  </section>
+
+  <section class="grid" aria-label="Music Mirror resources">
+    <article class="card">
+      <h2>Support</h2>
+      <p class="muted">Get help with microphone access, practice data, and app questions.</p>
+      <a href="/music-mirror/support.html">Open support</a>
+    </article>
+    <article class="card">
+      <h2>Privacy</h2>
+      <p class="muted">Read how Music Mirror handles local practice data and third-party content links.</p>
+      <a href="/music-mirror/privacy.html">Open privacy policy</a>
+    </article>
+  </section>
+</BaseLayout>

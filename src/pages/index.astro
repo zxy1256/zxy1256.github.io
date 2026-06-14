@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<BaseLayout
+  title="Xinyu Zhang"
+  description="Personal site for Xinyu Zhang, including product pages, support, privacy policies, and writing."
+>
+  <section class="hero">
+    <p class="eyebrow">Personal site</p>
+    <h1>Xinyu Zhang</h1>
+    <p class="lede">A home for projects, product support, privacy policies, and future writing.</p>
+  </section>
+
+  <section class="grid" aria-label="Site sections">
+    <article class="card">
+      <h2>Music Mirror</h2>
+      <p class="muted">Practice support pages for Music Mirror, an iOS app for music practice notes, reference media, and recordings.</p>
+      <div class="button-row">
+        <a class="button primary" href="/music-mirror/">Open</a>
+        <a class="button" href="/music-mirror/support.html">Support</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Blog</h2>
+      <p class="muted">A placeholder for future notes and longer-form writing.</p>
+      <div class="button-row">
+        <a class="button" href="/blog/">View blog</a>
+      </div>
+    </article>
+  </section>
+</BaseLayout>
