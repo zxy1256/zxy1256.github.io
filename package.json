@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "build:music-mirror": "astro build && node scripts/sync-music-mirror.mjs"
   },
   "dependencies": {
     "astro": "^5.9.3"

@@ -1,0 +1,20 @@
+---
+import "../styles/music-mirror.css";
+const { title, description, path, current = "" } = Astro.props;
+const base = "/music-mirror/";
+const links = [["Start here", "get-started/"], ["FAQ", "faq/"], ["Support & feedback", "support.html"]];
+---
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title><meta name="description" content={description} />
+<link rel="canonical" href={"https://xinyuzhang.me" + path} />
+<meta name="theme-color" content="#f7f7f1" />
+<meta property="og:title" content={title} /><meta property="og:description" content={description} />
+<meta property="og:type" content="website" /><meta property="og:url" content={"https://xinyuzhang.me" + path} />
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Primary"><a class="brand" href={base}><img src={base + "assets/app-icon.png"} width="36" height="36" alt="" />Music Mirror</a><div class="nav-links">{links.map(([label, link]) => <a href={base + link} aria-current={current === link ? "page" : undefined}>{label}</a>)}</div></nav></header>
+<main id="main" class="wrap" tabindex="-1"><slot /></main>
+<footer class="wrap"><a href="/">© 2026 Xinyu Zhang</a><nav aria-label="Footer"><a href={base}>Music Mirror</a><a href={base + "support.html"}>Contact</a><a href={base + "privacy.html"}>Privacy</a></nav></footer>
+</body></html>
